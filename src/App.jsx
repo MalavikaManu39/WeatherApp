@@ -11,8 +11,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const apiKey = "c413d9c87d4d50748f21fae063e870d4";
-
+ const apiKey = import.meta.env.VITE_API_KEY;
   // Current location weather
   useEffect(() => {
 
